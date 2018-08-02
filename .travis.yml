@@ -1,17 +1,31 @@
-sudo: enabled
 language: cpp
-compiler:
-  - clang
-  - gcc
+matrix:
+  include:
+    - compiler: gcc
+      os: linux
+    - compiler: clang
+      os: osx
+
 addons:
   apt:
     sources:
-      - george-edison55-precise-backports
+    - ubuntu-toolchain-r-test
     packages:
-      - cmake-data
-      - cmake
+    - gcc-5
+    - g++-5
+    - clang
+
 script:
-- cmake .
-- make install
-- make test
-- cpack -C CPackConfig.cmake
+  - cmake .
+  - make install
+  - make test
+  - cpack -C CPackConfig.cmake
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
+
+osx_image: xcode9.3
