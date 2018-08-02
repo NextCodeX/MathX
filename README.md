@@ -1,6 +1,8 @@
 # MathX
 函数计算
 
+[![Travis](https://travis-ci.org/NextCodeX/MathX.svg?style=for-the-badge)](https://travis-ci.org/NextCodeX/MathX)
+
 ## Compile
 ``` sh
 $ cmake .
