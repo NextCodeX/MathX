@@ -6,7 +6,7 @@
 $ cmake .
 ```
 > result
-``` shell
+``` sh
 -- The C compiler identification is AppleClang 9.1.0.9020039
 -- The CXX compiler identification is AppleClang 9.1.0.9020039
 -- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
@@ -31,7 +31,7 @@ $ cmake .
 $ make install
 ```
 > result
-``` shell
+``` sh
 [ 50%] Built target MathFunctions
 Scanning dependencies of target MathX
 [ 75%] Building CXX object CMakeFiles/MathX.dir/main.cc.o
@@ -50,7 +50,7 @@ Install the project...
 $ make test
 ```
 > result
-``` shell
+``` sh
 Running tests...
 Test project /Users/zhoumq/projj/github.com/NextCodeX/MathX
     Start 1: test_run
@@ -82,7 +82,7 @@ $ cpack -C CPackSourceConfig.cmake
 ```
 
 > result
-``` shell
+``` sh
 CPack: Create package using STGZ
 CPack: Install projects
 CPack: - Run preinstall target for: MathX
@@ -105,7 +105,7 @@ $ sh MathX-0.1.1-Darwin.sh
 ```
 
 > result
-``` shell
+``` sh
 MathX Installer Version: 0.1.1, Copyright (c) Humanity
 This is a self-extracting archive.
 The archive will be extracted to: /Users/zhoumq/projj/github.com/NextCodeX/MathX
