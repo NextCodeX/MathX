@@ -1,7 +1,7 @@
 language: cpp
 matrix:
   include:
-    - compiler: gcc
+    - compiler: clang
       os: linux
     - compiler: clang
       os: osx
@@ -11,7 +11,6 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     packages:
-    - gcc-5
     - g++-5
     - clang
 
