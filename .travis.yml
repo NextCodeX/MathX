@@ -11,5 +11,6 @@ addons:
       - cmake
 script:
 - cmake .
+- make install
 - make test
 - cpack -C CPackConfig.cmake
