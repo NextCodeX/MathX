@@ -1,0 +1,4 @@
+#cmakedefine USE_MYMATH
+
+#define MathX_VERSION_MAJOR @MathX_VERSION_MAJOR@
+#define MathX_VERSION_MINOR @MathX_VERSION_MINOR@

@@ -1,0 +1,13 @@
+_CPack_Packages
+CMakeFiles
+MathX*
+Testing
+*.cmake
+config.h
+CMakeCache.txt
+install_manifest.txt
+Makefile
+math/*
+!math/MathFunctions.h
+!math/MathFunctions.cc
+!math/CMakeLists.txt
